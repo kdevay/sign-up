@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    border: 2px solid green;
+}
+
+
+/* 1st containers */
+.design { 
+    width: clamp(400px, 534px, 534px);
+    height: 100vh;
+    background-image: url(water-small.png);
+    background-color: rgb(5, 52, 60);
+    border: 2px solid red;
+    overflow: hidden;
+}
+
+.content {
+    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    display: flex;
+    height: 100vh;
+    width: 60vw;
+    border: 2px blue;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+
+/* 2nd layer */
+.trans {
+    margin: 170px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 139px;
+    background-color: rgba(31, 31, 31, 0.5);
+    color: white;
+    font-size: 6em;
+    font-family: 'Limelight';
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.content > p {
+    font-weight: 400;
+}
+/* .brand {
+    color: white;
+    
+} */
+
+/* 3rd containers */
+/* .brand {
+    opacity: 100%;
+} */
+
+.logo {
+    width: 10vw;
+    height: 10vw;
+}
+
+.footer {
+    text-align: center;
+    position: relative;
+    top: 16em;
+}

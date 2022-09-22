@@ -4,43 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
     <title>Sign Up</title>
 </head>
 <body>
-    <div class="design">
-        <div class="trans">
-            <img src="logo.png">
-            <h1>NAME</h1>
+    <div class="page">
+        <div class="design">
+            <!-- <div class="brand">
+                <img src="logo.png" class="logo">
+                <p>NAME</p>
+            </div> -->
+            <div class="trans">
+                <img src="logo.png" class="logo">
+                <p>FISH</p>
+            </div>
+            <p class="footer">Photo by <a href="https://www.pexels.com/@aulsh99/">Aaron Ulsh</a> on <a href="https://www.pexels.com/">Pexels</a></p>
         </div>
-        <p class="footer">Photo by <a href="https://www.pexels.com/@aulsh99/">Aaron Ulsh</a> on <a href="https://www.pexels.com/">Pexels</a></p>
-    </div>
-    <div class="content">
-        <h3> Are you tired of being human? Overwhelmed by all of the chores, politics, clocks, fingernails, and money you're supposed to keep track of? Become a fish. The bathroom is everywhere and the sky is a myth.</h3><br>
-        <h3>Join us.</h3>
-        <fieldset>
-            <legend>Let's become fish!</legend>
-            
-            <label for="firstName">FIRST NAME</label>
-            <input type="text" id="firstName">
-            
-            <label for="lastName">LAST NAME</label>
-            <input type="text" id="lastName">
-            
-            <label for="email">EMAIL</label>
-            <input type="email" id="email">
+        <div class="content">
+            <p> Are you tired of being human? Overwhelmed by all of the chores, politics, clocks, fingernails, and money you're supposed to keep track of? Become a fish. The bathroom is everywhere and the sky is a myth.</p><br>
+            <p>Join us.</p><br>
+            <fieldset>
+                <legend>Let's become fish!</legend>
+                
+                <label for="firstName">FIRST NAME</label>
+                <input type="text" id="firstName" name="firstName" minlength="2" maxlength="25" required>
+                
+                <label for="lastName">LAST NAME</label>
+                <input type="text" name="lastName" id="lastName" minlength="2" maxlength="25" required>
+                
+                <label for="email">EMAIL</label>
+                <input type="email" name="email" id="email" required>
 
-            <label for="phone">PHONE NUMBER</label>
-            <input type="number" id="phone">
+                <label for="phone">PHONE NUMBER</label>
+                <input type="tel" id="phone" name="phone" placeholder="0-000-0000" pattern="[0-9]{1}-[0-9]{3}-[0-9]{4}" required>
 
-            <label for="password">PASSWORD</label>
-            <input for="password" id="password">
+                <label for="password">PASSWORD</label>
+                <input for="password" name="password" id="password" minlength="7" maxlength="30" required>
 
-            <label for="confirm">CONFIRM PASSWORD</label>
-            <input for="password" id="confirm">
+                <label for="confirm">CONFIRM PASSWORD</label>
+                <input for="password" name="confirm"  id="confirm" minlength="7" maxlength="30" required>
 
-        </fieldset>
-        <button type="submit">metamorphose</button><br>
-        <p>Already a fish? <a>Log in</a></p>
+            </fieldset><br>
+            <button type="submit">metamorphose</button><br>
+            <p>Already a fish? <a>Log in</a></p>
+        </div>
     </div>
 </body>
 </html>
