@@ -17,8 +17,12 @@ https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90
 - Do not worry about making it look nice on mobile
 - Ensure the password fields match each other via javascript validation
 
-button colors:
-- #267b87
-- #257b81
-- #015c49
+Attributions:
+-Logo font is "limelight" designed by Sorkin Type https://fonts.google.com/specimen/Limelight
+-All other text is "ITC Souvenir medium" discovered on Fonts In Use :https://fontsinuse.com/typefaces/1913/itc-souvenir
+    -desiged by ITC, according to Fonts In Use: "originally designed by Morris F. Benton in a single style in 1914"
+    -downloaded from https://freefontsfamily.com/itc-souvenir-font-family-free/
+    -reformatted from FontSquirrel
+-"Blue Water" (image) by Aaron Ulsh on Pexels licensed for free use
+    -and edited with GIMP
 
