@@ -1,29 +1,63 @@
 // import inputs
-let alert = document.getElementById("alert");
+let message = document.getElementById("alert");
 let password = document.getElementById("password");
 let confirmation = document.getElementById("confirm");
+let checkMark = document.getElementById("valid");
 
-confirmation.addEventListener("focus", checkRequirements())
-confirmation.addEventListener("input", validate());
+password.addEventListener("blur", checkRequirements);
+confirmation.addEventListener("input", validate);
 
 function checkRequirements() {
-    // if (password.value.length < 7) {
-    //     alert.textContent = "Password must contain at least 7 characters"
-    //     alert.style.display = "block";
-    // } else if (password.value)
-    console.log("alert value: " alert.value);
-    console.log("alert type: ", typeof alert.value);
-
+    console.log(checkMark);
+    // console.log(checkMark.style.display);
+    if (password.value.length < 7) {
+        password.className = "unmatching";
+        message.textContent = "* Password must contain at least 7 characters"
+        message.style.display = "block";
+        return false;
+    } else if (!password.value.match(/[a-z]/)){
+        password.className = "unmatching";
+        message.textContent = "* Password must contain at least 1 lowercase letter"
+        message.style.display = "block";
+        return false;
+    } else if (!password.value.match(/[A-Z]/)){
+        password.className = "unmatching";
+        message.textContent = "* Password must contain at least 1 uppercase letter"
+        message.style.display = "block";
+        return false;
+    } else if (!password.value.match(/[0-9]/)){
+        password.className = "unmatching";
+        message.textContent = "* Password must contain at least 1 number"
+        message.style.display = "block";
+        return false;
+    } else if (!password.value.match(/[!@#$%^&*()_+=~`{}|;:'"/?.>,<-]/)){
+        password.className = "unmatching";
+        message.textContent = "* Password must contain at least 1 special character"
+        message.style.display = "block";
+        return false;
+    } 
+    message.textContent = "";
+    message.style.display = "none";
+    password.classList.remove("unmatching");
+    return true;
 }
 
-
 function validate() {
-    // Validate password
+    // if not matching
     if (password.value !== confirmation.value){
-        alert.style.display = "block";
+        password.className = "unmatching";
+        confirmation.className = "unmatching";
+        message.textContent = "* Passwords do not match";
+        message.style.display = "block";
+        checkMark.style.display = "none";
+        return;
     }
-    console.log("alert value: " alert.value);
-    console.log("alert type: ", typeof alert.value);
+    // If matching
+    password.classList.remove("unmatching");
+    confirmation.classList.remove("unmatching");
+    message.textContent = "";
+    checkMark.style.display = "block";
+    return;
 }
 
 /*
@@ -32,6 +66,9 @@ function validate() {
     border: 2px solid #a23b26;
     border-radius: 4px;
 }
+
+.valid
+
 
 #alert {
     display: none;
