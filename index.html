@@ -25,33 +25,52 @@
             <p class="footer">Photo by <a href="https://www.pexels.com/@aulsh99/">Aaron Ulsh</a> on <a href="https://www.pexels.com/">Pexels</a></p>
         </div>
         <div class="content">
-            <p> Are you tired of being human? Overwhelmed by all of the chores, politics, clocks, fingernails, and money you're supposed to keep track of? Become a fish. The bathroom is everywhere and the sky is a myth.</p><br>
-            <p>Join us.</p><br>
+            <div id="hero">
+                <p>Are you tired of being human? </p>
+                <p>Overwhelmed with the chores, politics, clocks, fingernails, and money? </p>
+                <p>Sign up now to become a fish.</p>
+                <p>The bathroom is everywhere and the sky is a myth.</p>
+                <p>Join us.</p>
+            </div>
+            <br>
             <fieldset>
                 <legend>Let's become fish!</legend>
-                
-                <label for="firstName">FIRST NAME</label>
-                <input type="text" id="firstName" name="firstName" minlength="2" maxlength="25" required>
-                
-                <label for="lastName">LAST NAME</label>
-                <input type="text" name="lastName" id="lastName" minlength="2" maxlength="25" required>
-                
-                <label for="email">EMAIL</label>
-                <input type="email" name="email" id="email" required>
+                <div>
+                    <label for="firstName">FIRST NAME</label><br> 
+                    <input type="text" id="firstName" name="firstName" minlength="2" maxlength="25" required><br>
+                    
+                    <label for="email">EMAIL</label><br>
+                    <input type="email" name="email" id="email" required><br>
 
-                <label for="phone">PHONE NUMBER</label>
-                <input type="tel" id="phone" name="phone" placeholder="0-000-0000" pattern="[0-9]{1}-[0-9]{3}-[0-9]{4}" required>
-
-                <label for="password">PASSWORD</label>
-                <input for="password" name="password" id="password" minlength="7" maxlength="30" required>
-
-                <label for="confirm">CONFIRM PASSWORD</label>
-                <input for="password" name="confirm"  id="confirm" minlength="7" maxlength="30" required>
-
+                    <label for="password">PASSWORD</label><br>
+                    <input type="password" name="password" id="password" minlength="7" maxlength="30" required><br>
+                    <p id="alert">* Passwords do not match</p>
+                </div>
+                <div>
+                    <label for="lastName">LAST NAME</label><br>
+                    <input type="text" name="lastName" id="lastName" minlength="2" maxlength="25" required><br>
+                    
+                    <label for="phone">PHONE NUMBER</label><br>
+                    <input type="tel" id="phone" name="phone" placeholder="0-000-0000" pattern="[0-9]{1}-[0-9]{3}-[0-9]{4}" required><br>
+    
+                    <label for="confirm">CONFIRM PASSWORD</label><br>
+                    <input type="password" name="confirm"  id="confirm" minlength="7" maxlength="30" required><br>
+                </div>
             </fieldset><br>
-            <button type="submit">metamorphose</button><br>
-            <p>Already a fish? <a>Log in</a></p>
+            <div>
+                <button id="submit" type="submit">metamorphose</button><br>
+                <p>Already a fish? <a href="https://google.com">Log in</a></p>
+            </div>
+            
         </div>
     </div>
 </body>
-</html>
+<!-- 
+    ID's
+    firstName
+    lastName
+    email
+    phone
+    password
+    confirm
+-->

@@ -16,3 +16,9 @@ https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90
 - selected input: should have a blue border and subtle box-shadow;(use :focus)
 - Do not worry about making it look nice on mobile
 - Ensure the password fields match each other via javascript validation
+
+button colors:
+- #267b87
+- #257b81
+- #015c49
+
