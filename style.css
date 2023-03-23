@@ -157,11 +157,12 @@ table {
 
 fieldset {
     display: flex;
+    flex-direction: column;
     width: 100%;
     background-color: #fcfbf5;
     padding: 20px 35px;
     border: none;
-    height: 240px;
+    min-height: 290px;
     box-shadow: 2px 4px 6px 2px #abab9d;
 }
 
@@ -177,18 +178,38 @@ button {
 }
 
 /* 4th layer */
-legend {
-    position: relative;
-    top: 35px;
+h1 {
+    font-size: 20.8px;
 }
 
-fieldset > div {
-    position: relative;
-    top: 25px;
+#formDiv{
+    margin-top: 10px;
+    display: flex;
+    gap: 50px;
+}
+
+#left {
+    width: 260px;
 }
 
 #right {
     width: 260px;
+}
+
+#fieldRow1,
+#fieldRow2,
+#fieldRow3,
+#fieldRow4,
+#fieldRow5,
+#fieldRow6 {
+    width: 100%;
+    /* background-color: grey; */
+    margin-bottom: 10px;
+    height: 74.59px;
+}
+
+#confirmDiv{
+    display: flex;
 }
 
 label {
@@ -227,13 +248,13 @@ button:active {
     box-shadow: 1px 2px 3px 1px #9ea6a4;
 }
 
-.unmatching {
+.invalid {
     outline: none;
     border: 2px solid #a23b26;
     border-radius: 4px;
 }
 
-#alert {
+.alert {
     display: none;
     color: #a23b26;
     font-size: .8rem;

@@ -27,36 +27,53 @@
         <div class="content">
             <div id="hero">
                 <p>Are you tired of being human? </p>
-                <p>Overwhelmed with the chores, politics, clocks, fingernails, and money? </p>
+                <p>Overwhelmed with chores, politics, clocks, fingernails, and money? </p>
                 <p>Sign up now to become a fish.</p>
                 <p>The bathroom is everywhere and the sky is a myth.</p>
                 <p>Join us.</p>
             </div>
             <br>
             <fieldset>
-                <legend>Let's become fish!</legend>
-                <div>
-                    <label for="firstName">FIRST NAME</label><br> 
-                    <input type="text" id="firstName" name="firstName" minlength="2" maxlength="25" required><br>
-                    
-                    <label for="email">EMAIL</label><br>
-                    <input type="email" name="email" id="email" required><br>
-
-                    <label for="password">PASSWORD</label><br>
-                    <input type="password" name="password" id="password" minlength="7" maxlength="30" required><br>
-                    <p id="alert"></p>
-                </div>
-                <div id="right">
-                    <label for="lastName">LAST NAME</label><br>
-                    <input type="text" name="lastName" id="lastName" minlength="2" maxlength="25" required><br>
-                    
-                    <label for="phone">PHONE NUMBER</label><br>
-                    <input type="tel" id="phone" name="phone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
-    
-                    <label for="confirm">CONFIRM PASSWORD</label><br>
-                    <input type="password" name="confirm"  id="confirm" minlength="7" maxlength="30" required>
-                    <p id="valid">✓</p>
-                    <br>
+                <h1>Let's become fish!</h1>
+                <div id="formDiv">
+                    <div id="left">
+                        <div id="fieldRow1">
+                            <label for="firstName">FIRST NAME</label><br> 
+                            <input type="text" id="firstName" name="firstName" minlength="2" maxlength="25" required><br>
+                            <p class="alert" id="firstNameAlert"></p>
+                        </div>
+                        <div id="fieldRow2">
+                            <label for="email">EMAIL</label><br>
+                            <input type="email" name="email" id="email" required><br>
+                            <p class="alert" id="emailAlert"></p>
+                        </div>
+                        <div id="fieldRow3">
+                            <label for="password">PASSWORD</label><br>
+                            <input type="password" name="password" id="password" minlength="7" maxlength="30" required><br>
+                            <p class="alert" id="passwordAlert"></p>
+                        </div>
+                    </div>
+                    <div id="right">
+                        <div id="fieldRow4">
+                            <label for="lastName">LAST NAME</label><br>
+                            <input type="text" name="lastName" id="lastName" minlength="2" maxlength="25" required><br>
+                            <p class="alert" id="lastNameAlert"></p>
+                        </div>
+                        <div id="fieldRow5">
+                            <label for="phone">PHONE NUMBER</label><br>
+                            <input placeholder="000-000-0000" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+                            <p class="alert" id="phoneAlert"></p>
+                        </div>
+                        <div id="fieldRow6">
+                            <label for="confirm">CONFIRM PASSWORD</label><br>
+                            <div id="confirmDiv">
+                                <input type="password" name="confirm"  id="confirm" minlength="7" maxlength="30" required>
+                                <p id="valid">✓</p>
+                            </div>
+                            <p class="alert" id="confirmAlert"></p>
+                            <br>
+                        </div>
+                    </div>
                 </div>
             </fieldset><br>
             <div>
